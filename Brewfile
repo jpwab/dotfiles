@@ -9,7 +9,6 @@ tap "homebrew/core"
 # Binaries
 brew "htop"
 brew "tmux"
-brew "zsh"
 brew 'httpie'
 brew 'mackup'
 brew 'tree'
@@ -21,6 +20,7 @@ cask 'hyper'
 cask 'docker'
 cask 'google-chrome'
 cask 'insomnia'
+cask 'visual-studio-code'
 cask 'sublime-text'
 cask 'vlc'
 cask "spotify"
