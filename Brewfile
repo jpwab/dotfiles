@@ -23,7 +23,8 @@ cask 'insomnia'
 cask 'visual-studio-code'
 cask 'sublime-text'
 cask 'vlc'
-cask "spotify"
+cask 'spotify'
+case 'firefox'
 
 # Quicklook
 cask 'qlcolorcode'
