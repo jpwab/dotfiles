@@ -24,7 +24,7 @@ cask 'visual-studio-code'
 cask 'sublime-text'
 cask 'vlc'
 cask 'spotify'
-case 'firefox'
+cask 'firefox'
 
 # Quicklook
 cask 'qlcolorcode'
