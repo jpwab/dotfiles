@@ -25,13 +25,7 @@ cask 'sublime-text'
 cask 'vlc'
 cask 'spotify'
 cask 'firefox'
-
-# Quicklook
-cask 'qlcolorcode'
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'quicklook-csv'
-cask 'qlstephen'
+cask 'jdownloader'
 
 # Fonts
 cask 'font-lato'
