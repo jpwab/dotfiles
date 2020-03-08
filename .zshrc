@@ -19,6 +19,8 @@ alias gs="git status"
 alias gd="git diff"
 alias ga="git add ."
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
+alias lol="fortune -s computers | cowsay | lolcat; uname -a"
+
 
 # Go development
 export GOPATH="/Users/julianpierer/go"
@@ -29,3 +31,4 @@ export PATH=$PATH:/Users/julianpierer/go
 # launch tmux at start
 if [ -z $TMUX ]; then; tmux; fi
 
+lol
