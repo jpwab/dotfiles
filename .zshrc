@@ -5,8 +5,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-fpath+=${ZDOTDIR:-~}/.zsh_functions
-
 # shorties
 alias ls="ls -al"
 alias dc="docker-compose"
@@ -29,6 +27,4 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export PATH=$PATH:/Users/julianpierer/go
 
 # launch tmux at start
-if [ -z $TMUX ]; then; tmux; fi
-
-lol
+#if [ -z $TMUX ]; then; tmux; fi
