@@ -18,7 +18,7 @@ alias gd="git diff"
 alias ga="git add ."
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias lol="fortune -s computers | cowsay | lolcat; uname -a"
-
+alias yd="youtube-dl"
 
 # Go development
 export GOPATH="/Users/julianpierer/go"
