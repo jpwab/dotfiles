@@ -1,7 +1,7 @@
 export ZSH="/Users/julianpierer/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
-plugins=(git)
+plugins=(git dotenv docker osx )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -28,3 +28,5 @@ export PATH=$PATH:/Users/julianpierer/go
 
 # launch tmux at start
 #if [ -z $TMUX ]; then; tmux; fi
+
+cd ~/code
