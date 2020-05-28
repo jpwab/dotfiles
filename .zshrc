@@ -1,9 +1,11 @@
-export ZSH="/Users/julianpierer/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+#export ZSH="/Users/julianpierer/.oh-my-zsh"
+#ZSH_THEME="robbyrussell"
 
-plugins=(git dotenv docker osx )
+export TERM="xterm-256color"
 
-source $ZSH/oh-my-zsh.sh
+#plugins=(git dotenv docker osx)
+
+#source $ZSH/oh-my-zsh.sh
 
 # shorties
 alias ls="ls -al"
@@ -13,12 +15,10 @@ alias stop="dc stop"
 alias reloadzshrc="source ~/.zshrc"
 alias zshrc="nano  ~/.zshrc"
 alias g="git"
-alias gs="git status"
-alias gd="git diff"
-alias ga="git add ."
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias lol="fortune -s computers | cowsay | lolcat; uname -a"
 alias yd="youtube-dl"
+alias cc="cd ~/code"
 
 # Go development
 export GOPATH="/Users/julianpierer/go"
@@ -26,7 +26,7 @@ export GOROOT=/usr/local/go
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export PATH=$PATH:/Users/julianpierer/go
 
-# launch tmux at start
-#if [ -z $TMUX ]; then; tmux; fi
+eval "$(starship init zsh)"
 
-cd ~/code
+# start tmux
+if [ -z $TMUX ]; then; tmux; fi
