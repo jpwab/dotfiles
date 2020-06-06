@@ -19,12 +19,17 @@ alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias lol="fortune -s computers | cowsay | lolcat; uname -a"
 alias yd="youtube-dl"
 alias cc="cd ~/code"
+alias vim="nvim"
 
 # Go development
 export GOPATH="/Users/julianpierer/go"
 export GOROOT=/usr/local/go
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export PATH=$PATH:/Users/julianpierer/go
+
+# more exports
+#export dureeListenAddr="localhost:3000"
+export dureeBookmarksFile="/Users/julianpierer/bookmarks.json"
 
 eval "$(starship init zsh)"
 
