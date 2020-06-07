@@ -25,9 +25,18 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 rm -rf $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/.gitignore_global $HOME/.gitignore_global
 
-# Symlink the Mackup config file to the home directory
-ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+# Symlinks
+ln -s $HOME/.dotfiles/tmux.conf $HOME/tmux.conf
+
+# Settings
+### Remove the Dock autohide animation
+defaults write com.apple.dock autohide-time-modifier -int 0;ki$
+
+### Show Library folder
+chflags nohidden ~/Library
+
+### Show hidden files
+defaults write com.apple.finder AppleShowAllFiles YES
 
 echo "Done..."
-echo "Now run \"mackup restore\""
 

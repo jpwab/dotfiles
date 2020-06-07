@@ -16,7 +16,7 @@ alias brewup="brew update; brew upgrade; brew cleanup; brew doctor"
 
 # Go development
 export GOPATH="/Users/julianpierer/go"
-export GOROOT=/usr/local/go
+export GOROOT="/usr/local/go"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export PATH=$PATH:/Users/julianpierer/go
 
