@@ -36,7 +36,7 @@ ln -s $HOME/.dotfiles/code/keybindings.json $HOME/Library/Application\ Support/C
 
 # Settings
 ### Remove the Dock autohide animation
-defaults write com.apple.dock autohide-time-modifier -int 0;ki$
+defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
 
 ### Show Library folder
 chflags nohidden ~/Library
