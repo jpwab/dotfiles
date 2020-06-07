@@ -5,3 +5,5 @@ backup:
 brew-dump:
 	brew bundle dump --force
 
+cleanup:
+	brew cleanup

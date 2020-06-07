@@ -14,8 +14,8 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
-# Create our code directory
-mkdir $HOME/code
+# Create our dev directory
+mkdir $HOME/dev
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
@@ -29,4 +29,5 @@ ln -s $HOME/.dotfiles/.gitignore_global $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
 echo "Done..."
+echo "Now run \"mackup restore\""
 
