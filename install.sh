@@ -25,6 +25,9 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 rm -rf $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/.gitignore_global $HOME/.gitignore_global
 git config --global core.excludesfile $HOME/.gitignore_global
+git config --global user.name "Julian Pierer"
+git config --global user.email dev@julianpierer.com
+
 
 # Symlinks
 ln -s $HOME/.dotfiles/tmux.conf $HOME/tmux.conf
