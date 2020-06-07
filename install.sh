@@ -24,9 +24,12 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 # Remove gitignore_global if exists and replace it with our gitignore_global
 rm -rf $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/.gitignore_global $HOME/.gitignore_global
+git config --global core.excludesfile $HOME/.gitignore_global
 
 # Symlinks
 ln -s $HOME/.dotfiles/tmux.conf $HOME/tmux.conf
+ln -s $HOME/.dotfiles/code/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+ln -s $HOME/.dotfiles/code/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
 
 # Settings
 ### Remove the Dock autohide animation
