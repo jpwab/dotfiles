@@ -21,6 +21,7 @@
     "[html]": {
         "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
     },
+    "workbench.editor.enablePreview": false,
     "markdown-preview-enhanced.breakOnSingleNewLine": false,
     "workbench.editor.showIcons": false,
     "go.autocompleteUnimportedPackages": true,
@@ -28,12 +29,6 @@
     "workbench.tips.enabled": false,
     "breadcrumbs.icons": false,
     "workbench.editor.closeOnFileDelete": true,
-    // "workbench.colorCustomizations": {
-    //     "tab.activeBackground": "#00000000", // transparent
-    //     "titleBar.inactiveBackground": "#00000000",
-    //     "editor.background": "#13141d",
-    //     "editorGutter.background": "#13141d"
-    // },
     "editor.fontSize": 16,
     "editor.fontFamily": "Fira Code",
     "editor.fontWeight": "400",
@@ -46,8 +41,8 @@
     "workbench.startupEditor": "newUntitledFile",
     "city-lights-icons-vsc.hidesExplorerArrows": false,
     "workbench.editor.revealIfOpen": true,
-    "window.openFilesInNewWindow": "on",
-    "window.openFoldersInNewWindow": "on",
+    "window.openFilesInNewWindow": "off",
+    "window.openFoldersInNewWindow": "off",
     "workbench.iconTheme": "helium-icon-theme",
     "bracket-pair-colorizer-2.colors": [
         "#FAC29A",
@@ -55,13 +50,12 @@
         "#25B2BC"
     ],
     "vscode-neovim.highlightGroups.unknownHighlight": {},
-    "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
-    "workbench.colorTheme": "GitHub Light",
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[javascript]": {
         "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
     },
-    "material-icon-theme.showWelcomeMessage": false
+    "material-icon-theme.showWelcomeMessage": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false
 }

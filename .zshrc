@@ -20,8 +20,6 @@ export GOROOT="/usr/local/go"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export PATH=$PATH:/Users/julianpierer/go
 
-# more exports
-export dureeBookmarksFile="/Users/julianpierer/bookmarks.json"
 
 eval "$(starship init zsh)"
 

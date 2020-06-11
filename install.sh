@@ -31,8 +31,12 @@ git config --global user.email dev@julianpierer.com
 
 # Symlinks
 ln -s $HOME/.dotfiles/tmux.conf $HOME/tmux.conf
+
+# Setup VSCode
 ln -s $HOME/.dotfiles/code/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 ln -s $HOME/.dotfiles/code/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
+cat $HOME/.dotfiles/code/extensions.list | xargs -L1 code --install-extension
+
 
 # Settings
 ### Remove the Dock autohide animation
