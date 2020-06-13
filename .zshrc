@@ -39,7 +39,7 @@ upgrade() {
     brew update; 
     brew upgrade; 
     brew cleanup; 
-    brew doctor
+    brew doctor;
     echo 'Done ...'
 }
 
