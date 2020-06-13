@@ -2,22 +2,6 @@ export TERM="xterm-256color"
 
 source /usr/local/share/antigen/antigen.zsh
 
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
-
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
-antigen bundle git
-antigen bundle command-not-found
-
-# Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
-
-# Load the theme.
-antigen theme robbyrussell
-
-# Tell Antigen that you're done.
-antigen apply
-
 # shorties
 alias ls="ls -al"
 alias ..="cd .."
@@ -38,6 +22,9 @@ export GOPATH="/Users/julianpierer/go"
 export GOROOT="/usr/local/go"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export PATH=$PATH:/Users/julianpierer/go
+
+
+PROMPT='%n on %m in: %~ '
 
 # start tmux
 if [ -z $TMUX ]; then; tmux; fi
