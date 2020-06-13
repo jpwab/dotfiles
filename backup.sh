@@ -2,4 +2,4 @@
 brew bundle dump --force
 
 # dump all vscode extensions
-code --list-extensions > code/extensions.list
+code --list-extensions > vscode/extensions.list
