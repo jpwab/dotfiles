@@ -31,6 +31,7 @@ git config --global user.email dev@julianpierer.com
 
 # Symlinks
 ln -s $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
+ln -s $HOME/dotfiles/.config $HOME/.config
 
 # Setup VSCode
 ln -s $HOME/dotfiles/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
