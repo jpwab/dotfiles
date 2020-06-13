@@ -11,11 +11,17 @@ alias start="dc start"
 alias stop="dc stop"
 alias reloadzshrc="source ~/.zshrc"
 alias zshrc="nano  ~/.zshrc"
-alias g="git"
 alias yd="youtube-dl"
 alias dev="cd ~/dev"
-alias brewup="brew update; brew upgrade; brew cleanup; brew doctor"
-#alias tmux='tmux -2'
+
+alias g="git"
+alias gs="git status"
+alias gaa="git add --all"
+alias gc="git commit -v"
+alias gf="git fetch"
+alias gl="git pull"
+alias gp="git push"
+alias gco="git checkout"
 
 # Go development
 export GOPATH="/Users/julianpierer/go"
@@ -23,8 +29,23 @@ export GOROOT="/usr/local/go"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export PATH=$PATH:/Users/julianpierer/go
 
-
 PROMPT='%n on %m in: %~ '
+
+weather() {
+    curl http://wttr.in/$1
+}
+
+upgrade() {
+    brew update; 
+    brew upgrade; 
+    brew cleanup; 
+    brew doctor
+    echo 'Done ...'
+}
+
+port() {
+    lsof -i $1
+}
 
 # start tmux
 if [ -z $TMUX ]; then; tmux; fi
