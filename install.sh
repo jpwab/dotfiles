@@ -17,25 +17,25 @@ brew bundle
 # Create our dev directory
 mkdir $HOME/dev
 
-# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the dotfiles
 rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+ln -s $HOME/dotfiles/.zshrc $HOME/.zshrc
 
 # Remove gitignore_global if exists and replace it with our gitignore_global
-rm -rf $HOME/.gitignore_global
-ln -s $HOME/.dotfiles/.gitignore_global $HOME/.gitignore_global
+rm -rf $HOME/gitignore_global
+ln -s $HOME/dotfiles/.gitignore_global $HOME/.gitignore_global
 git config --global core.excludesfile $HOME/.gitignore_global
 git config --global user.name "Julian Pierer"
 git config --global user.email dev@julianpierer.com
 
 
 # Symlinks
-ln -s $HOME/.dotfiles/tmux.conf $HOME/tmux.conf
+ln -s $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
 
 # Setup VSCode
-ln -s $HOME/.dotfiles/code/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
-ln -s $HOME/.dotfiles/code/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
-cat $HOME/.dotfiles/code/extensions.list | xargs -L1 code --install-extension
+ln -s $HOME/dotfiles/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+ln -s $HOME/dotfiles/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
+cat $HOME/dotfiles/vscode/extensions.list | xargs -L1 code --install-extension
 
 
 # Settings
